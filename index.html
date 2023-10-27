@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-OR-Compatible" content="IT-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eatlicious</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Caveat&family=Mooli&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Mooli&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Mooli&display=swap" rel="stylesheet">
+    <script src="./js.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+             <nav>
+                <div class="left">
+                    <img src="./images/logo.png">
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipe.html">Recipes</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <img src="images/menu2.jpg" class="menu-icon" onclick="menutoggle()">
+            <div class="row">
+                <div class="col2">
+                    <h1>Happiness</h1>
+                    <p>IS<br>HOMEMADE</p>
+                    <a href="recipe.html" class="btn">Explore Now &#10140;</a>
+                </div>
+                <div class="col2">
+                    <a href="about.html"><img src="./images/index-pic1.jpg" height="400px" width="400px"></a>
+                </div>
+            </div>
+        </div>
+        
+    </header>    
+    </div>
+
+    <!-------------------------------------Footer-------------------------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col1">
+                    <h3>Download our app</h3>
+                    <p>Download app for Android and iOS mobile phone.</p>   
+                    <div class="app-logo">
+                        <img src="images/app1.jpg">
+                        <img src="images/app2.jpg">
+                    </div>     
+                </div>
+                <div class="footer-col2">
+                    <img src="images/logo.png">
+                    <p>Happiness is Homemade</p>        
+                </div>
+                <div class="footer-col3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>       
+                </div>
+                <div class="footer-col4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>       
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023</p>
+        </div>
+    </div>
+
+
+<!-------------------------------js for toggle menu------------------------------------>
+
+    <script>
+        var menuitems = document.getElementById("menuitems")
+
+        menuitems.style.maxHeight= "0px";
+        function menutoggle(){
+            if (menuitems.style.maxHeight=="0px")
+            {
+                menuitems.style.maxHeight= "200px";
+            }
+            else
+            {
+                menuitems.style.maxHeight= "0px";
+            }
+        }
+    </script>
+</body>
+</html>
